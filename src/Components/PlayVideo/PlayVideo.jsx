@@ -73,11 +73,19 @@ const PlayVideo = ({ videoId }) => {
                 <p>{apiData ? apiData.snippet.description.slice(0, 250) : "Description here"}</p>
                 <hr />
                 <h4>{apiData ? value_converter(apiData.statistics.commentCount) : 146} Comments</h4>
-                {commentData.map((item, index) =>  (
+
+                {commentData.map((item, index) => (
                     <div key={index} className='comment'>
-                        <img src={item.snippet.topLevelComment.snippet.authorProfileImageUrl} alt="profile" />
+                        <img
+                            src={item.snippet.topLevelComment.snippet.authorProfileImageUrl || user_profile}
+                            alt="profile"
+                            onError={(e) => e.target.src = user_profile} // Fallback if image fails to load
+                        />
                         <div>
-                            <h3>{item.snippet.topLevelComment.snippet.authorDisplayName} <span>{moment(item.snippet.topLevelComment.snippet.publishedAt).fromNow()}</span></h3>
+                            <h3>
+                                {item.snippet.topLevelComment.snippet.authorDisplayName}
+                                <span>{moment(item.snippet.topLevelComment.snippet.publishedAt).fromNow()}</span>
+                            </h3>
                             <p>{item.snippet.topLevelComment.snippet.textDisplay}</p>
                             <div className='comment-action'>
                                 <img src={like} alt="like" />
@@ -87,6 +95,7 @@ const PlayVideo = ({ videoId }) => {
                         </div>
                     </div>
                 ))}
+
             </div>
         </div>
     );
