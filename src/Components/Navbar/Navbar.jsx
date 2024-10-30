@@ -6,7 +6,7 @@ import search_icon from '../../assets/search.png'
 import upload_icon from '../../assets/upload.png'
 import more_icon from '../../assets/more.png'
 import notification_icon from '../../assets/notification.png'
-import profile_icon from '../../assets/jack.png'
+import user_profile from '../../assets/user_profile.jpg';
 import { Link } from 'react-router-dom'
 
 const Navbar = ({setSidebar}) => {
@@ -28,7 +28,7 @@ const Navbar = ({setSidebar}) => {
         <img src={upload_icon} alt="" />
         <img src={more_icon} alt="" />
         <img src={notification_icon} alt="" />
-        <img className='user-icon' src={profile_icon} alt="" />
+        <img className='user-icon' src={user_profile} alt="" />
       </div>
     </nav>
   )
