@@ -1,11 +1,9 @@
 # YouTube Clone 🎥  
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-blue)](https://youtube-clone-umt1.onrender.com/)  
-[![GitHub](https://img.shields.io/badge/Source%20Code-GitHub-black)](https://github.com/pradyumn8/Youtube-Clone.git)  
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-green)](https://youtube-clone-umt1.onrender.com/)  
+[![GitHub](https://img.shields.io/badge/Source%20Code-GitHub-blue)](https://github.com/pradyumn8/Youtube-Clone.git)  
 
 A YouTube clone application that replicates core YouTube functionalities, including video display and playback. The project features a clean and intuitive UI with organized code and helpful comments for easy understanding.  
-
-Check out a sample video here: [🎬 Watch Now](https://youtube-clone-umt1.onrender.com/video/1/Q9KWcWKo2T8)  
 
 ---
 
@@ -38,9 +36,10 @@ Check out a sample video here: [🎬 Watch Now](https://youtube-clone-umt1.onren
 ## Installation 🛠️  
 
 1. **Clone the repository:**  
-   ```bash
+ ```bash
    git clone https://github.com/pradyumn8/Youtube-Clone.git
-```
+ ```
+
 ### Navigate into the project directory
  ```bash
  cd Youtube-Clone
